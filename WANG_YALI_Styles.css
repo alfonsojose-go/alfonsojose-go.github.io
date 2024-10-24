@@ -48,7 +48,6 @@ div {
 
 .header_container{
     height:150px;
-  
     display:flex;
     width:100%;
     flex-direction: row;
@@ -147,9 +146,9 @@ div {
     text-overflow: ellipsis;
     overflow: hidden;
     flex-direction: column;
-    padding-left: 50px;
-    padding-right: 50px;
-   
+    padding-left: 1em;
+    padding-right: 1em;
+
     
     
    
@@ -161,7 +160,7 @@ div {
 }
 .imbox02 div {
     width:350px;
-   text-align: center;
+    text-align: center;
 
 }
 
@@ -195,7 +194,7 @@ div {
     padding:0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    place-content: left;
+    place-content: start;
     padding-left: 50px;
     background-color: #0060a9;
     align-content: center;
@@ -267,7 +266,7 @@ div {
     background:rgb(181, 239, 249);
 }
 
-#back_to_top{
+.back_to_top{
     margin-top:20px;
     width: 100%;
     text-align: center;
@@ -276,7 +275,7 @@ div {
     color:#0060a9;
 }
 
-#back_to_top :hover{
+.back_to_top :hover{
     
     color:#ed0cfd;
     text-decoration:underline;
@@ -334,7 +333,6 @@ div {
 
 }
 .main_container{
-    display:block;
     display:flex;
     height:auto;
     width:100%;
@@ -343,7 +341,7 @@ div {
 }
 .main_container_01{
 
-    display:block;
+    
     display:flex;
     position:relative;
     flex-direction: row;
@@ -352,11 +350,10 @@ div {
    
 }
 .main_container_02{
-
-    display:block;
     display:flex;
+    justify-content: space-between;
     position:relative;
-    flex-direction: row;
+    /* flex-direction: row; */
     background-color: #eeeac4;
     padding-top: 15px;
     padding-bottom: 0px;
@@ -454,7 +451,7 @@ div {
 }
 .species_description td{
     font-size: 16px;
-    font-weight: 200px;
+    font-weight: 200;
     width: 250px;
     text-align: left;
    
@@ -507,7 +504,7 @@ div {
     margin:10px;
 }
 .focus_text:hover{
-    scale:120%;
+    transform: scale(1.20);
 }
 .species_periods{
 
@@ -702,10 +699,10 @@ div {
 }
 
 .main_container_left{
-    display:inline-block;
+    
     display:flex;
+    float: right;
     width:35%;
-    display:flex;
     flex-direction: column;
     background-color: #eeeac4;
 

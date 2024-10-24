@@ -144,6 +144,14 @@ table thead {
     text-align: left;
 }
 
+table sup a {
+    font-size: 0.5em;
+}
+
+table thead tr td {
+    border-style: none;
+}
+
 .Nesting {
     margin-top: 0.5em;
 }
