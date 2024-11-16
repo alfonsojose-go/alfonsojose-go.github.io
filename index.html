@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RDP ENCYCLOPEDIA</title>
-    <meta http-equiv="refresh" content="30">
     <meta name="keywords" content="RDP ENCYCLOPEDIA, animals,birds,Dinosaurs,Nothosaurus">
     <meta name="description" content="This is a encyclopeadia about animals, prehistory or recent like birds ,Dinosaurs ">
     <meta name="author" content="Alfonso Jose Go and YALI WANG">
-  
     <meta name="robots" content="index,follow">
-   
-    <link rel="stylesheet" href="WANG_YALI_Styles.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- [Added] For the font family style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
+    <header class="sticky">
         <div>
-            <a id="front_loc" href="index.html" target="_blank">
+            <a href="index.html" target="_blank">
                 <div class="imbox01">RDP KNOWLEGE ENCYCLOPEDIA </div>
             </a>
         </div>
@@ -39,40 +42,50 @@
               
             </div>
         </div>
-        
-    </header>
-    <div id="Imagine_loc"></div>
-    <nav  class="sticky">
-        <nav class="sticky">
+        <nav>
+            <div class="navbar">
+                    <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">About</a>
+                        <a href="#">Articles</a>
+                        <a href="#">Blogs</a> 
+                        <a href="#">Podcasts</a>
+    
+                    </div>
+                </div>
+            </div>
+    
             <ul class="nav_container" >
                 <li><a href="index.html"><div class="imbox_nav">Home</div></a></li>
-                <li><a href=""><div class="imbox_nav">About</div></a></li>
-                <li><a href=""><div class="imbox_nav">Articles</div></a></li>
-                <li><a href=""><div class="imbox_nav">Blogs</div></a></li>
-                <li><a href=""><div class="imbox_nav">Podcasts</div></a></li>  
-           
+                <li><a href="#"><div class="imbox_nav">About</div></a></li>
+                <li><a href="#"><div class="imbox_nav">Articles</div></a></li>
+                <li><a href="#"><div class="imbox_nav">Blogs</div></a></li>
+                <li><a href="#"><div class="imbox_nav">Podcasts</div></a></li>  
+               
             </ul>
         </nav>
-     
-    </nav>
+    </header>
+    
     <main class="main_container03">
-        <div class="artical_01">
+        <section class="article_01">
             
             <h2><a href="AlfonsoJose-Go.html">Do you know Blue Jays?</a></h2>
-            <a href="AlfonsoJose-Go.html"><img class= "artical_img01" src="resources/bluejay-about.jpg" alt="Blue Jays"></a>
-            <div class="content">
+            <a href="AlfonsoJose-Go.html"><img class= "article_img01" src="resources/bluejay-about.jpg" alt="Blue Jays"></a>
+            <p class="content">
                 Familiar to everyone, the Blue Jay experiences a healthy provincial population and secure habitat. It is a common resident in central Alberta. The Blue Jay has moved northward with expansive human settlement, reaching the Grande Prairie, Peace River, Lesser Slave Lake, and Fort of McMurray regions (Salt and Salt 1976).  <a href="AlfonsoJose-Go.html">read more</a>
                 
+            </p>
 
-
-            </div>
-
-        </div>
-        <div class="artical_01">
+        </section>
+        <section class="article_01">
             
             <h2><a href="YALI_WANG.html">Do you know Nothosaurus?</a></h2>
-            <a href="YALI_WANG.html"><img class= "artical_img01" src="resources/nothosaurus02.jpg" alt="Nothosaurus"></a>
-            <div class="content">
+            <a href="YALI_WANG.html"><img class= "article_img01" src="resources/nothosaurus02.jpg" alt="Nothosaurus"></a>
+            <p class="content">
                 Nothosaurus (Greek for "false lizard") is an extinct genus of aquatic reptiles. 
                        The type genus of the extinct Nothosauria order, it existed from Middle to Late
                        Triassic epochs. It had a long, narrow snout and fang-like teeth. small teeth lined
@@ -87,19 +100,30 @@
                 
 
 
-            </div>
+            </p>
 
-        </div>
-        
+        </section>
+
+        <section class="article_01" id="towhee">
+            <h2><a href="#">Do you know ?</a></h2>
+            <a href=""><img src="resources/towhee.jpg" class="article_img01" alt="not related"></a>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo obcaecati voluptas laboriosam ea optio dolor corrupti temporibus aut recusandae. Eos, nobis facere ab cum porro fugit rem? Nulla, quis eos.
+            <a href="#towhee">read more</a>
+            </p>
+        </section>
+
+        <section class="article_01" id="tyrannosaurus">
+            <h2><a href="#">Do you know ?</a></h2>
+            <a href=""><img src="resources/tyrannosaurus.webp" class="article_img01" alt="not related"></a>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sequi doloremque ut enim, saepe corrupti, quis odio accusantium illum eligendi id tenetur, ipsam quia voluptates quidem? Veritatis quidem a deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo obcaecati voluptas laboriosam ea optio dolor corrupti temporibus aut recusandae. Eos, nobis facere ab cum porro fugit rem? Nulla, quis eos.
+            <a href="#tyrannosaurus">read more</a>
+            </p>
+        </section>
 
             
     </main>
     
     <footer>
-        <div class="back_to_top">
-            
-            <a  href="AlfonsoJose-Go.html">next page</a>
-        </div>
         <div class="footer_downcontainer">
             <p class="root_im">© 2024 RDPedia All rights reserved.</p>
         </div>
