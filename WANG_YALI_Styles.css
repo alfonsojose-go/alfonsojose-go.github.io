@@ -241,6 +241,12 @@ div {
    
 }
 
+/* Added this to offset the links with the nav bar height -Alfonso */
+.offset {
+    padding-top: 15rem; /* Adjust based on your nav bar height */
+    margin-top: -60px;
+}
+
 /* media queries */
 
 @media screen and (max-width:1200px) {
