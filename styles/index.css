@@ -1,0 +1,126 @@
+ /* fix header sidebar footer */
+ :root {
+    --light1: #fadefa;
+    --light2: #e6c1e6;
+    --medium: #a213a2;
+    --mona: #8B008B;
+    --maxwell: #8B0000;
+    --dark: #530253;
+    --top: 5rem;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merienda", sans-serif;
+}
+
+main p{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; /* ensure header is on the top of the page */
+    height: 15vh;
+    
+}
+.custom-bg{
+    background-color: #8B008B;
+}
+.custom-bg1{
+    background-color: #8b008bbb;
+}
+.custom-bg2{
+    background-color: #8b000085;
+}
+.sidebar{
+    position: fixed;
+    top: 15vh;
+    left: 0px;
+    height: 80vh;       
+    z-index: 0; /* ensure sidebar is on the side of the page */
+}
+footer{
+    position: fixed;
+    bottom: 0em;
+    left: 0em;
+    height: 5vh;
+    z-index: 1050; 
+    font-size: 12px;/* ensure footer is on the bottom of the page */
+    background: linear-gradient(to right, var(--maxwell), var(--mona));
+    color: white;
+}
+/* naviation definition */
+.nav_container{
+
+    width: 100%;
+    display: flex;
+    height:5vh;
+    list-style-type:none;
+    padding:20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    place-content: start;
+    background-color:#8B0000;
+    align-content: center;
+    border-color:rgb(243, 29, 104);
+    border-bottom: 1px solid  #8B0000;
+    box-shadow: 0px 1px 1px rgb(86, 87, 90);
+    z-index: 10;
+   
+}
+.nav_container li{
+    display: flex;
+    place-self: center; 
+    align-items: center;
+} 
+.nav_container li a {
+    display: block; 
+    padding: 0;
+    text-decoration: none;
+}
+.imbox_nav{
+    display:flex;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    color:white;
+}
+.imbox_nav:hover{
+    text-decoration: underline;
+    color: white;
+}
+.navbar {
+    display: none;
+}
+
+.offset {
+    padding-top: 10rem; /* Adjust based on your nav bar height */
+}
+
+
+ /* media inquiry  */
+
+@media screen and (max-width: 500px){
+    .advertisment {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+
+    .sidebar ul.nav li a {
+        font-size: 0.75rem; /* 链接字体变小 */
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 4vh;
+        height: 4vh; 
+    }
+    footer{
+        font-size: 10px;
+    }
+}
