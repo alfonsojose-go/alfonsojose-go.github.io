@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travis' cats</title>
+        <meta name="keywords" content="Travis' Cat, Maxwell, Mona, cat, pets">
+        <meta name="description" content="This is a website of Travis and his family of cats">
+        <meta name="author" content="ALFONSO JOSE GO and YALI WANG">
+        <meta name="robots" content="index,follow">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+      
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        
+        <!-- personal styles -->
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+        
+    <body class="container-fluid d-flex">
+        <header class="container-fluid ">
+            <div class="row border-bottom border-primary-subtle overflow-hidden custom-bg" style="height:10vh;">
+                <div class="col-lg-3 col-md-3 col-sm-3 d-flex align-items-center justify-content-center  text-center col-3 ">
+                    <a class=" text-white text-decoration-none d-flex align-items-center justify-content-center" href="index.html">
+                        <h2 >Travis’ cats</h2>
+                    </a>
+                </div> 
+                <div class="col-lg-9 col-md-9 col-sm-9 vstack d-flex align-items-center justify-content-center col-3 " >
+                    <h5 class="mb-0">Welcome to <a class="text-white text-decoration-none" href="index.html">Travis’ cats</a></h5>
+                    <div class="advertisment" >
+                            Show the interesting information about cats!
+                    </div>
+                </div>
+            </div>
+            <nav class="container-fluid p-0 m-0 bg-success">
+                <div class="row border-bottom border-primary-subtle overflow-hidden" style="height:5vh;">
+                
+                    <ul class="nav_container" >
+            
+                        <li><a href="index.html"><div class="imbox_nav">Home</div></a></li>
+                        <li><a href="mona.html"><div class="imbox_nav">Mona</div></a></li>
+                        <li><a href="maxwell.html"><div class="imbox_nav">Maxwell</div></a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </nav> 
+            
+        </header>
+        <aside class="sidebar container-fluid d-flex" >
+            <div class="row d-flex w-100">
+                <div class="p-2 col-lg-3 col-md-3 col-sm-4 col-4" style="background-color: #8b008b37 ;">
+                    <div class="blog" style="height:25%">
+                        <h1>Blog post</h1>
+                        <ul class="nav flex-column">
+                            <li class="nav-item w-100">
+                                <a class="text-truncate d-block w-100" href="#post1" >
+                                    Mona and Tenley Fighting
+                                </a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a class="text-truncate d-block w-100" href="#post2" >
+                                    Traveling
+                                </a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a class="text-truncate d-block w-100" href="#post3" >
+                                    Space Making Post
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    
+
+                    <h4>Cat Poll</h4>
+                    <form id="catPollForm">
+                        <div class="mb-2">
+                            <label for="userName" class="form-label">Your Name:</label>
+                            <input title="Enter your name" type="text" class="form-control" id="userName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="favoriteCat" class="form-label">Favorite Cat:</label>
+                            <select class="form-select " id="favoriteCat" required>
+                                <option value="">Select a cat</option>
+                                <option value="Mona">Mona</option>
+                                <option value="Maxwell">Maxwell</option>
+                               
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="submitVote()">Vote</button>
+                    </form>
+                    <div id="pollResults" class="mt-2">
+                        <h6>Poll Results</h6>
+                        <ul class="list-group ">
+                            <li class="list-group-item p-1 mb-2 custom-bg1">Mona: <span id="MonaVotes">4</span></li>
+                            <li class="list-group-item p-1 custom-bg2">Maxwell: <span id="MaxwellVotes">7</span></li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </aside>
+    
+        <main class="container-fluid">
+            <div class="row d-flex align-items-start" style="margin-top: 15vh; margin-bottom:5vh;">
+                <div class="d-flex flex-column col-lg-9 offset-lg-3 col-md-9 offset-md-3 col-sm-8 offset-sm-4 offset-4 col-8 mt-3" >
+                    <section id="post1" class="mt-3 offset">
+                        <h1>Mona and Tenley Fighting<sup class="badge bg-success ms-2 fs-6">New</sup></h1>  <!-- Title with "New" badge -->
+                        <p>Gosh, they sure do love to fight a lot – their personalities just clash. Mona is so anxious and shy all the
+                            time, and Tenley is young and rambunctious and loves to play, so they just don’t get along sometimes! I’ve
+                            tried many things to help, but the best thing to do is to have my partner and I play with each of them
+                            separately and give them lots of cuddles – that does the trick!
+                        </p>
+                        <div class="tag">
+                            <span class="badge bg-primary ms-2">Short</span> <!-- Tag badge -->
+                            <span class="badge bg-primary ms-2">Mona</span>   <!-- Tag badge -->
+                            <span class="badge bg-primary ms-2">Tenley</span> <!-- Tag badge -->
+                            <span class="badge bg-primary ms-2">English</span>   <!-- Tag badge -->
+                        </div>
+                    </section>
+                    <section id="post2" class="mt-3 offset">
+                        <h1>Traveling</h1> 
+                        <p>Dangit, I have to go to New Orleans for a conference which means leaving my poor little kitties behind! I
+                            can’t imagine they would enjoy such a trip… Tenley is terrified of leaving the house. Every time I put her
+                            on a little harness to go for a walk, she panics and runs back inside. What a strange cat!
+                            
+                        </p>
+                        <div class="tag">
+                            <span class="badge bg-primary ms-2">Short</span> <!-- Tag badge -->
+                            <span class="badge bg-primary ms-2">Tenley</span> <!-- Tag badge -->
+                            <span class="badge bg-primary ms-2">English</span>   <!-- Tag badge -->
+                        </div>
+                    </section>
+                    <section id="post3" class="mt-3 mb-3 offset">
+                        <h1>Space Making Post</h1> 
+                        <p>This is just to test your layout. It’s a bunch of lorem ipsum, which Maxwell spoke fluently.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas lobortis arcu, nec mattis diam consectetur at. Quisque nec leo id leo aliquet finibus. Praesent ut risus mattis libero condimentum dictum imperdiet eget nibh. Donec elit erat, finibus vel rhoncus in, tincidunt ac lorem. Phasellus vestibulum ipsum et lorem gravida, commodo accumsan magna posuere. Proin sodales egestas pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam a nibh at est condimentum porttitor ut quis est. Donec accumsan lobortis purus, eget rhoncus tellus varius lacinia. Suspendisse potenti. Sed mollis egestas tempus. Duis a lectus libero. Nam sed est turpis. Nunc justo arcu, feugiat quis elit eu, cursus euismod mi. Curabitur rutrum nisl libero, in elementum neque volutpat euismod. Mauris semper sollicitudin purus nec tempus.</p>
+                        <p>Ut mattis nulla sem, ac tristique est aliquam et. Maecenas lorem velit, ornare quis aliquam sed, viverra vitae diam. Duis et sem mi. Praesent pretium nisi interdum, ullamcorper nisl non, pharetra orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer ullamcorper sit amet quam ac tincidunt. Proin eget faucibus nisi. Donec finibus facilisis felis non consectetur. Aliquam quis volutpat tellus, vitae condimentum urna. Praesent vitae augue fringilla, pretium eros vel, ultrices lectus.</p>
+                        <p>Nunc eleifend mauris quam, sed vulputate ante semper vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur varius ex et ante viverra, vel fringilla quam luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis libero non purus hendrerit tempor. Nullam libero ante, dictum et eros nec, iaculis tempus dolor. Praesent sit amet mollis velit. Suspendisse aliquet convallis sapien, ut pretium magna iaculis vitae. Donec lobortis nibh et lorem pellentesque luctus.</p>
+                        <p>Duis et augue laoreet, pellentesque metus in, bibendum nulla. Fusce ut ante leo. Sed ullamcorper felis at eros facilisis, nec dignissim eros lobortis. Pellentesque nec luctus lorem, sit amet facilisis sapien. Vivamus et massa tempor, mollis risus sit amet, elementum ipsum. Aliquam massa quam, maximus vitae congue ac, pretium a sapien. Nullam faucibus neque a libero feugiat pharetra. In quis turpis eu metus pharetra volutpat. Mauris nisi felis, hendrerit sit amet erat at, interdum lobortis nisi. Maecenas at nulla at eros varius vehicula. Mauris mollis sem orci, vel fermentum dui aliquet a. Etiam tristique sit amet velit eget iaculis. In ultrices volutpat dignissim. In mollis eros at ipsum convallis tempor. Fusce at orci ac mi elementum sollicitudin.</p>
+                        <div class="tag">
+                            <span class="badge bg-primary ms-2">Long</span> <!-- Tag badge -->
+                            <span class="badge bg-primary ms-2">Maxwell</span> <!-- Tag badge -->
+                            <span class="badge bg-primary ms-2">Latin</span>   <!-- Tag badge -->
+                        </div>
+                    </section>
+                   
+                </div>
+            </div>
+
+            
+                    
+        </main>
+        
+        <!-- footer-->
+        <footer class="container-fluid custom-bg text-center " >    
+            <div class="row" style="height:5vh">
+                <div class="col-lg-12 col-md-12 d-flex justify-content-center align-items-center ">
+                    &copy; 2024 Designed by Alfonso Go and Yali Wang. Images supplied by Travis Cattington.
+                </div>
+            </div>   
+        </footer>
+
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script> 
+
+        
+        <script>
+
+            let names = [];
+            let MonaVotes = 4;
+            let MaxwellVotes = 7;
+
+            function updatePoll(catName){
+                // event.preventDefault();
+                
+
+                if (catName == "Mona"){
+                    MonaVotes += 1;
+                    $("#MonaVotes").html(MonaVotes);
+                } else {
+                    MaxwellVotes += 1;
+                    $("#MaxwellVotes").html(MaxwellVotes);
+                }
+            }
+        
+            function checkUser(userName){
+                
+                let nameToFind = userName.toLowerCase();
+
+                let result = names.find(name => name.toLowerCase() === nameToFind);
+
+                if (result){
+                    return true;
+
+                } else {
+                    names.push(userName);
+                    return false;
+                }
+
+            }
+
+            function submitVote(){
+
+                let userName = $("#userName").val();
+                let favoriteCat = $("#favoriteCat").val();
+
+
+                event.preventDefault();
+                if (!userName || !favoriteCat) {
+                    alert("Please fill out the required fields.");
+                } else {
+                    if (checkUser(userName)){
+                        alert("You have voted already. Thanks!");
+
+                    } else{
+                        updatePoll(favoriteCat);
+                        alert("Thank you " + userName + " for your vote!");
+                    }
+                    
+                };
+            };
+        </script>
+    </body>
+</html>
